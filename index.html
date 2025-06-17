@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PIR - Carga Térmica de Congelados</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>PIR - Carga Térmica de Congelados</h1>
+    <form id="calcForm">
+      <fieldset>
+        <legend>Dados de Entrada</legend>
+        <label>Largura (m):
+          <input type="number" step="0.01" id="largura" required>
+        </label>
+        <label>Comprimento (m):
+          <input type="number" step="0.01" id="comprimento" required>
+        </label>
+        <label>Altura (m):
+          <input type="number" step="0.01" id="altura" required>
+        </label>
+        <label>Movimento diário (kg):
+          <input type="number" step="1" id="movimento" required>
+        </label>
+        <label>Temperatura externa (°C):
+          <input type="number" step="0.1" id="tempExterna" required>
+        </label>
+        <label>Temperatura interna (°C):
+          <input type="number" step="0.1" id="tempInterna" required>
+        </label>
+        <label>Temperatura de entrada do produto (°C):
+          <input type="number" step="0.1" id="tempProduto" required>
+        </label>
+      </fieldset>
+      <button type="button" id="btnCalcular">Calcular</button>
+    </form>
+    <section id="resultado">
+      <p>Preencha os dados e clique em Calcular.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
