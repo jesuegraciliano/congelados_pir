@@ -21,7 +21,7 @@ function calculaCargaTermica() {
   const conducao    = U * areaTotal * (Te - Ti);
   const produto     = 1000 * (m * 1.77 * (Tp - Ti)) / (18 * 3600);
   const motores     = 5.6 * L * C * H;
-  const pessoas     = 390;
+  const pessoas     = 395;
   const iluminacao  = 10 * areaPiso;
   const fatorInf    = 1.146 * Math.pow(volume, -0.584);
   const infiltracao = 1000 * fatorInf * volume * 120;
