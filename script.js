@@ -24,7 +24,7 @@ function calculaCargaTermica() {
   const pessoas     = 395;
   const iluminacao  = 10 * areaPiso;
   const fatorInf    = 0.00014
-  const infiltracao = 1000 * fatorInf * volume * 120;
+  const infiltracao = 1000 * 0.00014 * volume * 120;
 
   // Cálculo da carga térmica total
   const cargaBruta = conducao + produto + motores + pessoas + iluminacao + infiltracao;
